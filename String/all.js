@@ -3,7 +3,7 @@
 // ######################
 
 //    - Useful string methods.
-var str1 = "Royal technosoft P ltd.";
+// var str1 = "Royal technosoft P ltd.";
 // console.log(str1);
 // console.log(str1[1]);
 
@@ -47,12 +47,45 @@ var str1 = "Royal technosoft P ltd.";
 
 // // slice 
         //     starting , ending index     remember : always starting index < ending index
-console.log(str1.slice(10,10));
-// str1.substring
-        // starting and ending index     remember : higher index always 
-console.log(str1.substring(10,10));
-// substr 
-        //  index  : length 
-console.log(str1.substr(10,10));
+// console.log(str1.slice(10,10));
+// // str1.substring
+//         // starting and ending index     remember : higher index always 
+// console.log(str1.substring(10,10));
+// // substr 
+//         //  index  : length 
+// console.log(str1.substr(10,10));
 
 
+
+///////////////////////////////////////////
+/17-04-2024/
+// var str1 = "Royal technosoft P ltd.";
+// var fname = "Raj";
+// var Age = 1;
+// console.log(str1);
+
+
+// // 
+// console.log("My name is Mohak.and i'm 1 year old.");
+// console.log("My name is ",fname,".and i'm ",Age," year old.");
+
+// // String Template   : `${}`
+
+// console.log(`My name is ${fname}.and i'm ${Age} year old.`);
+
+// Truthy and Falsy Value :  
+
+
+// if(1)
+// {
+//         console.log("true");
+// }
+// else{
+//         console.log("false");
+// }
+
+// Truthy Value : 
+//true,1,"fillout",[],[1,2,"zafar"],-1,3.14
+
+//Falsy Value : 
+// false,0,""(Empty String),null,undefined,NaN
