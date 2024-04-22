@@ -20,13 +20,3 @@
 // var Ans = [];
 // console.log(Ans.length);
 /////////////////////////////////////////////////////
-
-//    - Push pop shift unshift.
-//    - Primitive vs reference data types.
-//    - Clone array & spread operator.
-//    - For loop.
-//    - use const for creating arrays.
-//    - While loop in array.
-//    - For of loop.
-//    - For in loop.
-//    - Array destructuring.
