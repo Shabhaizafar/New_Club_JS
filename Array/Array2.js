@@ -120,9 +120,4 @@
 
 
 //////////////////////////////////////////////////
-//    - For loop.
-//    - use const for creating arrays.
-//    - While loop in array.
-//    - For of loop.
-//    - For in loop.
-//    - Array destructuring.
+
