@@ -70,25 +70,3 @@ function Function_Habbit(choice){
 
 var output = Function_Habbit(Good_Habbit[0]);
 console.log(output);
-
-////////////////////////////////////////////////
-// - Function Expression. // Anonymous Function
-// 1) without Argument and without Return type
-// 2) with Argument and without Return type
-// 3) without Argument and with Return type
-// 4) with Argument and with Return type
-
-//////////////////////////////////////////////////
-// - Arrow Functions.
-// 1) without Argument and without Return type
-// 2) with Argument and without Return type
-// 3) without Argument and with Return type
-// 4) with Argument and with Return type
-
-////////////////////////
-// - IIFE Function
-// - Generator Function
-// - callback Function
-// - recurssion Function 
-// - Higher-order-Function
-// - getter-setter Function
