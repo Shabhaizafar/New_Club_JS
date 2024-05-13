@@ -1,6 +1,6 @@
 // Array Methods : 
 
-var Arr = [1,2,3,4,5];
+// var Arr = [1,2,3,4,5];
 
 // Arr.includes
                     //1) Find Value   2) starting Index Point
@@ -64,16 +64,3 @@ Arr.forEach(element=>{
 
 
 ///////////////////////////////
-Arr.join
-Arr.sort
-
-
-Arr.every
-Arr.fill
-Arr.filter
-Arr.find
-Arr.map
-Arr.reduce
-Arr.reverse
-Arr.some
-Arr.splice
