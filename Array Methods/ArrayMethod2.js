@@ -24,7 +24,7 @@
 // console.log(Arr.reverse());
 
 
-var Arr = [12,11,1,3,1,6,3,78,9];
+// var Arr = [12,11,1,3,1,6,3,78,9];
 
 // var ans = Arr.every((a)=>{
 //     if(a<75)
@@ -40,19 +40,11 @@ var Arr = [12,11,1,3,1,6,3,78,9];
 // });
 
 // Arr.some
-var ans  = Arr.some((a)=>{
-        return a>80;
-    }
-);
-console.log(ans);
+// var ans  = Arr.some((a)=>{
+//         return a>80;
+//     }
+// );
+// console.log(ans);
 
 ///////////////////////////////////////
 
-/////////////////////////////////////////
-// Arr.fill
-// Arr.filter
-/////////////////////////////////////////
-// Arr.find
-// Arr.map
-// Arr.reduce
-// Arr.splice
