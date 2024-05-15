@@ -82,6 +82,7 @@
 
 //4)  Filter the even numbers from an array [1, 2, 3, 4, 5, 6].
 
+// Array 
 ///-----------------------------------------------
 // Filter by String Length
 
