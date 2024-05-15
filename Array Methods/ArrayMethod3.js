@@ -57,9 +57,7 @@
 
 
 ///////////////////////////////////
-// Arr.map
-// Arr.reduce
-// Arr.splice
+
 
 ///////////////////////////////////
 
@@ -75,6 +73,7 @@
 ///-----------------------------------------------
 // Fill with Dynamic Values
 //3)  Create an array of length 10 and fill it with the value of the current index (i.e., [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).
+
 
 ///-----------------------------------------------
 // Filter Method
@@ -105,4 +104,14 @@
 ///-----------------------------------------------
 // Find Index Using Find
 //9) Find the index of the first number greater than 10 in the array [2, 5, 8, 12, 15].
+
+// var Arr = [2, 5, 8, 12, 15];
+// var ans =Arr.find((v,i)=>{
+//     if(v>10)
+//         {
+//             return v;
+//         }
+// });
+// console.log(Arr.indexOf(ans));
+
 ///-----------------------------------------------
