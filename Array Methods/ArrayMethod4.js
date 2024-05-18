@@ -28,11 +28,11 @@
 ///////////////////////
 // Arr.reduce
 
-var Arr = [1,11,12,13,14,15,16,17];
+// var Arr = [1,11,12,13,14,15,16,17];
 
-var Ans = Arr.reduce((pvalue,cvalue,i,a)=>{
-    // console.log(pvalue,cvalue,pvalue+cvalue,i,a);
-    return a+10;
-});
+// var Ans = Arr.reduce((pvalue,cvalue,i,a)=>{
+//     // console.log(pvalue,cvalue,pvalue+cvalue,i,a);
+//     return a+10;
+// });
 
-console.log(Ans);
+// console.log(Ans);
