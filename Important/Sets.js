@@ -55,9 +55,7 @@
 
 // Convert an array [1, 2, 3, 4, 4, 5, 5] to a Set to remove duplicates. Print the Set.
 //-----------------------------------
-// Convert Set to Array:
 
-// Convert a Set back to an array. Print the array.
 //-----------------------------------
 // Iterate over a Set:
 
@@ -67,17 +65,7 @@
 
 // Find the size of a Set and print it.
 //-----------------------------------
-// Union of Sets:
 
-// Create two Sets and find their union. Print the resulting Set.
-//-----------------------------------
-// Intersection of Sets:
-
-// Create two Sets and find their intersection. Print the resulting Set.
-//-----------------------------------
-// Difference of Sets:
-
-// Create two Sets and find their difference (elements in Set1 that are not in Set2). Print the resulting Set.
 //-----------------------------------
 // Clear a Set:
 
@@ -91,3 +79,4 @@
 
 // Given an array of objects, extract unique values of a specific property using a Set.
 //-----------------------------------
+
