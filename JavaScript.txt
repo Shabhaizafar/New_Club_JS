@@ -86,8 +86,8 @@
    ✅ Iterables.
    ✅ Sets.
    ✅ Maps.
-   - Object.assign.
-   - Optional chaining.
+   ✅ Object.assign.
+   ✅ Optional chaining.
 
 => Object Oriented JavaScript / Prototypal Inheritance :-
 
