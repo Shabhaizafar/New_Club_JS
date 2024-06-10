@@ -116,11 +116,11 @@
 // hasGlutenFreeOption(menu); // true
 
 
-const menu = [
-    { name: "Vegetable Stir Fry", ingredients: ["vegetables", "soy sauce"], vegetarian: true, glutenFree: false },
-    { name: "Beef Burger", ingredients: ["beef patty", "cheese", "bun"], vegetarian: false, glutenFree: true },
-    { name: "Quinoa Salad", ingredients: ["quinoa", "vegetables", "dressing"], vegetarian: true, glutenFree: false }
-];
+// const menu = [
+//     { name: "Vegetable Stir Fry", ingredients: ["vegetables", "soy sauce"], vegetarian: true, glutenFree: false },
+//     { name: "Beef Burger", ingredients: ["beef patty", "cheese", "bun"], vegetarian: false, glutenFree: true },
+//     { name: "Quinoa Salad", ingredients: ["quinoa", "vegetables", "dressing"], vegetarian: true, glutenFree: false }
+// ];
    
 // console.log(menu);
 // var ans= true;
@@ -173,3 +173,167 @@ const menu = [
 //     myMap.set(iterator,count);
 // }
 // console.log(myMap);
+//--------------------------------------------------------
+// Create a function deepMergeObjects that merges two objects deeply. If both objects have a property with the same name and they are both objects
+// themselves, the function should merge them recursively.
+// Example:
+// const obj1 = { a: { x: 1, y: 2 }, b: 2 };
+// const obj2 = { a: { y: 3, z: 4 }, c: 3 };
+// deepMergeObjects(obj1, obj2); // { a: { x: 1, y: 3, z: 4 }, b: 2, c: 3 }
+// function deepMerge(target, source) {
+//     for (const key in source) {
+//       if (source[key] && typeof source[key] === 'object') {
+//         if (!target[key]) {
+//           target[key] = {};
+//         }
+//         deepMerge(target[key], source[key]);
+//       } else {
+//         target[key] = source[key];
+//       }
+//     }
+//     return target;
+//   }
+  
+//   const obj1 = { a: { x: 1, y: 2 }, b: 2 };
+//   const obj2 = { a: { y: 3, z: 4 }, c: 3 };
+  
+//   const mergedObj = deepMerge({}, obj1);
+//   deepMerge(mergedObj, obj2);
+// ---------------------------------------
+// Question 7: Arrays - Sort (5 marks)
+// Given an array of objects representing products, each with a name and price, write a function sortProductsByCustomRule that sorts the array in
+// ascending order based on a custom sorting rule:
+// If the product name starts with a vowel (a, e, i, o, u), it should come before products whose names start with a consonant.
+// If two products have the same starting letter, they should be sorted based on their prices in descending order.
+// Example
+// const products = [
+//     { name: "Apple", price: 1000 },
+//     { name: "Banana", price: 500 },
+//     { name: "Laptop", price: 750 },
+//     { name: "Oranges", price: 800 }
+//    ];
+//    sortProductsByCustomRule(products);
+   /*
+   [
+    { name: "Apple", price: 1000 },
+    { name: "Oranges", price: 800 },
+    { name: "Banana", price: 500 },
+    { name: "Laptop", price: 750 }
+   ]
+   */
+// const products = [
+//     { name: "Laptop", price: 750 },
+//     { name: "Banana", price: 500 },
+//     { name: "Oranges", price: 800 },
+//     { name: "Apple", price: 1000 },
+//     // { name: "Oranges", price : 1100},
+//     // { name: "Banana", price: 1500 }
+//    ];
+
+// function sortProductsByCustomRule(products){
+//     var sortedArr = [];
+//     var temp = [];
+//     for (let i = 0; i < products.length; i++) {
+//         if(products[i].name[0]== 'A' || products[i].name[0]== 'E' || products[i].name[0]== 'I'|| products[i].name[0]== 'O' || products[i].name[0]== 'U'){
+//             sortedArr.push(products[i]);
+//         }
+//         else{
+//             temp.push(products[i]);
+//         }
+    
+//     }
+//     sortedArr.sort((a,b)=>{
+//         return a.name[0].charCodeAt()-b.name[0].charCodeAt();
+//     });
+    
+//     for (let i = 0; i < sortedArr.length; i++) {
+//         for (let j = 0; j < sortedArr.length; j++) {
+//             if(sortedArr[i].name[0]==sortedArr[j].name[0])
+//             {
+//                 if(sortedArr[i].price>sortedArr[j].price)
+//                 {
+//                     var temp2 = sortedArr[i];
+//                     sortedArr[i] = sortedArr[j];
+//                     sortedArr[j] = temp2;
+//                 }
+//             }
+            
+//         }
+//     }
+
+    
+//     temp.sort((a,b)=>{
+//         return a.name[0].charCodeAt()-b.name[0].charCodeAt();
+//     });
+    
+//     for (let i = 0; i < temp.length; i++) {
+//         for (let j = 0; j < temp.length; j++) {
+//             if(temp[i].name[0]==temp[j].name[0])
+//             {
+//                 if(temp[i].price>temp[j].price)
+//                 {
+//                     var temp2 = temp[i];
+//                     temp[i] = temp[j];
+//                     temp[j] = temp2;
+//                 }
+//             }
+            
+//         }
+//     }
+    
+//     return sortedArr.concat(temp);
+// }
+// var ans = sortProductsByCustomRule(products);
+// console.log(ans);
+//-----------------------------------------------------
+// Question 8: Arrays - Every and Some (4 marks)
+// Consider a menu of dishes offered by a restaurant. Each dish object contains information about its name, ingredients, and whether it is vegetarian-friendly
+// or not. Write two functions:
+// 1. areAllVegetarian that checks if all dishes on the menu are vegetarian-friendly.
+// 2. hasGlutenFreeOption that checks if there is any gluten-free dish on the menu.
+// Example:
+// const menu = [
+//  { name: "Vegetable Stir Fry", ingredients: ["vegetables", "soy sauce"], vegetarian: true, glutenFree: true },
+//  { name: "Beef Burger", ingredients: ["beef patty", "cheese", "bun"], vegetarian: false, glutenFree: false },
+//  { name: "Quinoa Salad", ingredients: ["quinoa", "vegetables", "dressing"], vegetarian: true, glutenFree: true }
+// ];
+// areAllVegetarian(menu); // false
+// hasGlutenFreeOption(menu); // true
+
+// const menu = [
+//  { name: "Vegetable Stir Fry", ingredients: ["vegetables", "soy sauce"], vegetarian: true, glutenFree: true },
+//  { name: "Beef Burger", ingredients: ["beef patty", "cheese", "bun"], vegetarian: false, glutenFree: false },
+//  { name: "Quinoa Salad", ingredients: ["quinoa", "vegetables", "dressing"], vegetarian: true, glutenFree: true }
+// ];
+
+// function areAllVegetarian(menu){
+//     var ans =  menu.every(
+//         (v)=>{
+//             return v.vegetarian==true;
+//         }
+//     );
+//     console.log(ans);
+// }
+// areAllVegetarian(menu);
+
+
+// function hasGlutenFreeOption(menu){
+//     var ans = menu.some(
+//         (v)=>{
+//             return v.glutenFree==true;
+//         }
+//     );
+//     console.log(ans);
+// }
+// hasGlutenFreeOption(menu);
+
+//---------------------------------------
+// Question 9: Arrays - Fill and Splice (4 marks)
+// Imagine a scenario of traffic flow analysis in a city. We have an array representing the traffic density on different streets at different times. Write two
+// functions:
+// 1. generateTrafficPattern that generates a random traffic pattern array for a given number of streets and time slots.
+// 2. adjustTrafficPattern that simulates a traffic management intervention by removing the traffic data for specific streets during peak hours and
+// replacing them with predefined data.
+// Example:
+// // Part 1:
+// const trafficPattern = generateTrafficPattern(10, 24); // Randomly generated traffic pattern
