@@ -65,6 +65,25 @@ console.log()
 
 // //-------------------------------------------------------------
 // 8. Write a JavaScript program where the program takes a random integer between 1 and 10, and the user is then prompted to input a guess number. The program displays a message "Good Work" if the input matches the guess number otherwise "Not matched".  
+// var randomNumber = parseInt((Math.random()*10)+1);  //7
+// while(1)
+//     {
+//         var n = +prompt("Enter a Number (1-10) : ");  //4
+//     if(randomNumber==n)
+//     {
+//         console.log(randomNumber,n);
+//         break;
+//     }
+//     else if(randomNumber<n)
+//     {
+//         console.log("Enter Lowest Value again");
+//     }
+//     else if(randomNumber>n)
+//     {
+//         console.log("Enter Higher Value again");
+    
+//     } 
+// }
 
 
 // //-------------------------------------------------------------
