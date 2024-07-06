@@ -328,12 +328,3 @@
 // hasGlutenFreeOption(menu);
 
 //---------------------------------------
-// Question 9: Arrays - Fill and Splice (4 marks)
-// Imagine a scenario of traffic flow analysis in a city. We have an array representing the traffic density on different streets at different times. Write two
-// functions:
-// 1. generateTrafficPattern that generates a random traffic pattern array for a given number of streets and time slots.
-// 2. adjustTrafficPattern that simulates a traffic management intervention by removing the traffic data for specific streets during peak hours and
-// replacing them with predefined data.
-// Example:
-// // Part 1:
-// const trafficPattern = generateTrafficPattern(10, 24); // Randomly generated traffic pattern
