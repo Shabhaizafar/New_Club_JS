@@ -64,6 +64,7 @@
 //     { name: "Nathan", grade: 82 },
 //     { name: "Olivia", grade: 77 }
 // ];
+
 // function All(a){
 //     if(a.grade>93)
 //     {
@@ -96,14 +97,12 @@
 //     return v.agrade=='A' || v.agrade=='B' || v.agrade=='C';
 // });
 
-// var finals = ans.reduce((a,b)=>{
-//     console.log(a.grade,b.grade,a.grade+b.grade);
-    
-//     return  a.grade+b.grade;
+// console.log(ans);
+// var final  = ans.reduce((pre,current)=>{
+//     current.grade = current.grade+pre.grade;
+//     return current;
 // });
-
-
-// console.log(finals);
+// console.log(final.grade/ans.length);
 
 ////////////////////
 // Question: Create a function to retrieve information from a nested object structure.
@@ -112,3 +111,69 @@
 // Optional Chaining: Use optional chaining to safely retrieve the name of the manager of a specific department.
 
 // Nullish Coalescing: Use nullish coalescing to provide a default value if the manager's name is not present.
+// let organization = {
+//     name: "Acme Corporation",
+//     headquarters: "New York",
+//     departments: {
+//         sales: {
+//             manager: "John Doe",
+//             employees: [
+//                 { name: "Alice Johnson", age: 32, position: "Sales Executive" },
+//                 { name: "Bob Smith", age: 28, position: "Sales Representative" }
+//             ]
+//         },
+//         marketing: {
+//             // manager: "Jane Smith",
+//             employees: [
+//                 { name: "Eve Williams", age: 35, position: "Marketing Manager" },
+//                 { name: "Frank Brown", age: 29, position: "Marketing Specialist" }
+//             ]
+//         },
+//         engineering: {
+//             manager: "Mike Davis",
+//             employees: [
+//                 { name: "Grace Lee", age: 40, position: "Software Engineer" },
+//                 { name: "Henry Clark", age: 45, position: "System Architect" }
+//             ]
+//         }
+//     }
+// };
+
+// for (const key in organization.departments) {
+//     console.log(organization.departments[key]?.manager??"SUUUUUUUUU");
+// }
+
+
+/////////////////////////////////////////
+// Create a function getEmployeeInfo to retrieve information from a nested object structure representing an organization. The organization object contains information about departments and employees. Implement the following operations:
+
+// Optional Chaining: Use optional chaining to safely retrieve the name of an employee within a specific department.
+
+// Nullish Coalescing: Use nullish coalescing to provide a default value ("Unknown") if the employee's name is not present.
+
+
+
+
+
+// Given an array students containing objects with student information including their names and exam scores, perform the following operations:
+
+// Map Operation:
+
+// Transform each student's object to include their name and a letter grade ('A', 'B', 'C', 'D', 'F') based on their numerical score.
+// Filter Operation:
+
+// Select only those students who have passed the exam (grades of 'A', 'B', or 'C').
+// Reduce Operation:
+
+// Calculate the average score of the selected students who have passed.
+// Example Array:
+
+// javascript
+// Copy code
+// let students = [
+//     { name: "Alice", score: 85 },
+//     { name: "Bob", score: 72 },
+//     { name: "Charlie", score: 91 },
+//     { name: "David", score: 65 },
+//     { name: "Emily", score: 78 }
+// ];
