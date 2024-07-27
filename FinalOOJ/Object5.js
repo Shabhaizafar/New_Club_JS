@@ -9,14 +9,6 @@ function Person(fname,lname){
     return user;
 }
 
-// Person.prototype = {
-//     Hello : function (){
-//         console.log(`Hello ${this.fname} ${this.lname}.`);
-//     },
-//     Greet : function (){
-//         console.log("Welcome Back.😃");
-//     }
-// }
 Person.prototype.Hello = function (){
         console.log(`Hello ${this.fname} ${this.lname}.`);
     }
