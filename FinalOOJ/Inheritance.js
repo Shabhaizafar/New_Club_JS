@@ -50,13 +50,3 @@ Child Class :           B   (inherit property or Method A class)
 // console.log(boy1.fathername);
 // console.log(boy1.childname);
 
-
-// 2. Multi-Level Inheritance
-// Definition:
-// Multi-level inheritance involves a chain of inheritance where a class or object inherits from another class or object, which itself inherits from yet another class or object. This forms a chain of inheritance.
-
-
-
-// 3. Multiple Inheritance
-// Definition:
-// Multiple inheritance refers to a scenario where a class or object inherits from more than one parent class or object. JavaScript does not support multiple inheritance directly through classes; however, you can achieve similar behavior using mixins.
