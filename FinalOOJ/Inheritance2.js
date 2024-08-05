@@ -40,9 +40,6 @@ console.log(c1);
 c1.bioData();
 */
 
-// 3. Multiple Inheritance
-// Definition:
-// Multiple inheritance refers to a scenario where a class or object inherits from more than one parent class or object. JavaScript does not support multiple inheritance directly through classes; however, you can achieve similar behavior using mixins.
 
 
 /////////////////////////////////////////////////////
