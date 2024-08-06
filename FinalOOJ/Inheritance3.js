@@ -9,13 +9,13 @@ class All{
 
 
 const Father = (superclass)=> class extends superclass{ 
-    fathername = "Kaleen Bhaiya";
+    Fathername = "Kaleen Bhaiya";
     
 }
 
 
 const Mother = (superclass)=> class extends superclass{ 
-    mothername = "Beena Bhabhi";
+    Mothername = "Beena Bhabhi";
 }
 class MixinBuilder{
     constructor(superclass){
@@ -27,20 +27,13 @@ class MixinBuilder{
 }
 
 
-var mix = (superclass)=>{
-    new MixinBuilder(superclass);
-}
+const mix = (superclass)=>new MixinBuilder(superclass);
 
 
 
 class Child extends mix(All).with(Father,Mother){
-        constructor(cname,lname){
-        this.childname = cname;
-        this.lastname = lname;
-    }
+    childname = "Munna";
+    lastname = "lname";
 }
-
-
-
-var c1 = new Child("Munna","Tripathi");
+const c1 = new Child();
 console.log(c1);

@@ -20,7 +20,7 @@ class Main {
 // this will combine everything in one class
 const mix = (superclass) => new Main(superclass);
 
-class Facebook extends mix(All).with(Father, Mother) {
+class Facebook extends mix(All).with(Father,Mother) {
         childname = "Munna";
         lastname = "lname";
 }
